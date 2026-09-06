@@ -1,0 +1,4 @@
+# Nothing is built in this repo. Keep it that way.
+.DS_Store
+Thumbs.db
+*.tmp

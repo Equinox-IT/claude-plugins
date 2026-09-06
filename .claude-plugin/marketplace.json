@@ -1,0 +1,26 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "equinox",
+  "description": "Approved Claude Code plugins for Equinox IT. Every external entry is pinned to a reviewed commit.",
+  "owner": {
+    "name": "Equinox IT",
+    "email": "platform@equinox.co.nz"
+  },
+  "plugins": [
+    {
+      "name": "diagram-design",
+      "displayName": "Diagram Design",
+      "description": "Editorial-quality technical and product diagrams rendered as standalone HTML with inline SVG, skinnable to match a brand. Reviewed and approved 4 Sep 2026 - see docs/approval-record/diagram-design.md.",
+      "author": {
+        "name": "Cathryn Lavery"
+      },
+      "category": "documentation",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/cathrynlavery/diagram-design.git",
+        "sha": "4451eadc484d76aa860edf3289c16fcd082dcdbf"
+      },
+      "homepage": "https://github.com/cathrynlavery/diagram-design"
+    }
+  ]
+}

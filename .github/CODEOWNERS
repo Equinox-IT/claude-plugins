@@ -1,0 +1,4 @@
+# Every change to the marketplace manifest requires platform review.
+/.claude-plugin/    @equinox-it/claude-platform
+/docs/approval-record/  @equinox-it/claude-platform
+*                   @equinox-it/claude-platform
