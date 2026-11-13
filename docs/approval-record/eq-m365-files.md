@@ -18,7 +18,7 @@ gateway is and how to sign in. All access control is in the gateway, not in the 
 | Surface | Present | Detail |
 |---|---|---|
 | Hooks | none | No `hooks/` directory, no `hooks` key |
-| MCP servers | 1 | `eq-m365-files`: remote HTTP server at `https://m365-gateway.equinox.co.nz/files`. Nothing runs locally |
+| MCP servers | 1 | `gateway`: remote HTTP server at `https://m365-gateway.equinox.co.nz/files`. Nothing runs locally |
 | Subagents | none | |
 | Slash commands | none | |
 | Skills | none | |
@@ -41,14 +41,18 @@ code. Removing the entry removes the server.
 **Clear — no secret in the plugin.** The sign-in client is a public client. The `clientId` is an
 identifier, not a credential, and there is no client secret anywhere in the design.
 
-**Watch — the names are part of permission rules.** A server that comes from a plugin is
-registered as `plugin:eq-m365-files:eq-m365-files`, and its tools are named
-`mcp__plugin_eq-m365-files_eq-m365-files__<tool>`, for example
-`mcp__plugin_eq-m365-files_eq-m365-files__read_document`. That differs from the pilot, where the
+**Watch — the names are part of permission rules.** Claude Code names a plugin's server
+`plugin:<plugin>:<server>`, so this one is `plugin:eq-m365-files:gateway`, and its tools are
+`mcp__plugin_eq-m365-files_gateway__<tool>`, for example
+`mcp__plugin_eq-m365-files_gateway__read_document`. The server is called `gateway`, not
+`eq-m365-files`, so the plugin's name is not repeated. That differs from the pilot, where the
 server was added by hand and the tools are `mcp__eq-m365-files__<tool>`. A permission rule written
 for the pilot form never matches the plugin form. Saved permissions and any rule in
-`claude-policy` must use the plugin form, and changing either name later means touching every managed
-profile. (Claude Code documentation, "Plugin-provided MCP servers".)
+`claude-policy` must use the plugin form, and changing either name later means touching every
+managed profile. (Claude Code documentation, "Plugin-provided MCP servers".)
+
+Later workloads follow the same pattern: one plugin each (`eq-m365-outlook`, `eq-m365-teams`),
+each with a server called `gateway`, so each is approved, rolled out and removed on its own.
 
 ## Before this can merge
 

@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "eq-m365-files": {
+    "gateway": {
       "type": "http",
       "url": "https://m365-gateway.equinox.co.nz/files",
       "oauth": {
