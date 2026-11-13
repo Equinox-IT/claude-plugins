@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "gateway": {
+      "type": "http",
+      "url": "https://m365-gateway.equinox.co.nz/files",
+      "oauth": {
+        "clientId": "00000000-0000-0000-0000-000000000000",
+        "callbackPort": 38765,
+        "scopes": "https://m365-gateway.equinox.co.nz/files/Connector.Use offline_access"
+      }
+    }
+  }
+}

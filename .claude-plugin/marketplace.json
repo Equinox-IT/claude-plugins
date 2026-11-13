@@ -21,6 +21,16 @@
         "sha": "4451eadc484d76aa860edf3289c16fcd082dcdbf"
       },
       "homepage": "https://github.com/cathrynlavery/diagram-design"
+    },
+    {
+      "name": "eq-m365-files",
+      "displayName": "Equinox M365 Files",
+      "description": "Read-only access to approved SharePoint and Teams file locations through the Equinox M365 gateway, as the signed-in person. First-party. NOT YET APPROVED - draft entry, see docs/approval-record/eq-m365-files.md.",
+      "author": {
+        "name": "Equinox IT"
+      },
+      "category": "integration",
+      "source": "./plugins/eq-m365-files"
     }
   ]
 }
