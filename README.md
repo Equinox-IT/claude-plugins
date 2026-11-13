@@ -13,6 +13,7 @@ to that file.
 | Plugin | Source | Pinned | Approved |
 |---|---|---|---|
 | `diagram-design` | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | `4451eadc` | [record](docs/approval-record/diagram-design.md) |
+| `eq-m365-files` | First-party: [`plugins/eq-m365-files`](plugins/eq-m365-files) | n/a | **Draft, not approved**: [record](docs/approval-record/eq-m365-files.md) |
 
 ## How a plugin gets in
 

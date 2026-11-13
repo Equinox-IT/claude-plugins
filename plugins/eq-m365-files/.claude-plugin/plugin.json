@@ -1,0 +1,10 @@
+{
+  "name": "eq-m365-files",
+  "displayName": "Equinox M365 Files",
+  "version": "0.1.0",
+  "description": "Read-only access to approved SharePoint and Teams file locations through the Equinox M365 gateway. You sign in as yourself; every request is checked against the published policy and recorded.",
+  "author": {
+    "name": "Equinox IT",
+    "email": "platform@equinox.co.nz"
+  }
+}
